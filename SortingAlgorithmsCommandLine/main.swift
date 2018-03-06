@@ -24,29 +24,37 @@ print("Press any key to generate the unsorted list.", terminator: "")
 let input = readLine()
 
 // Make an empty array / list
-var numbers : [Int] = []
+var cards : [Int] = []
 
 // Populate the array
-for _ in 1...10 {
-    numbers.append( random(between: 1, and: 50) )
-}
+cards.append(3)
+cards.append(6)
+cards.append(4)
+cards.append(5)
+cards.append(8)
+cards.append(2)
+cards.append(1)
 
 // Show the user the contents of the array
 print("-----")
 print("The contents of the unsorted list:")
-for i in 0...numbers.count - 1 {
-    print("Index \(i), value: \(numbers[i])")
+for i in 0...cards.count - 1 {
+    print("Index \(i), value: \(cards[i])")
 }
 print("-----")
 
 // ----------- Write code to sort the array here -----------
 print("Now sorting the array...")
 
+while cards.count > 0 {
+    cards.remove(at: cards.count - 1) //remove number at end of erray
+}
+
 // ----------- Final part of the program, show the sorted list -----------
 print("-----")
 print("The contents of the sorted list:")
-for i in 0...numbers.count - 1 {
-    print("Index \(i), value: \(numbers[i])")
+for i in 0...cards.count - 1 {
+    print("Index \(i), value: \(cards[i])")
 }
 print("-----")
 
