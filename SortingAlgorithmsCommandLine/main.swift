@@ -36,6 +36,8 @@ numbers.append(4)
 numbers.append(5)
 numbers.append(6)
 numbers.append(7)
+numbers.append(8)
+numbers.append(9)
 
 // Show the user the contents of the array
 print("-----")
@@ -48,8 +50,8 @@ print("-----")
 // ----------- Write code to sort the array here -----------
 print("Now sorting the array...")
 
-for _ in 1...7 {
-    for i in 0...5 {
+for _ in 1...numbers.count {
+    for i in 0...numbers.count - 2 {
         
         //is value at i less than value at i+1
         if numbers[i] < numbers[i+1] {
