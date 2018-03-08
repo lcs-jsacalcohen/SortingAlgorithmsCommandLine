@@ -48,77 +48,20 @@ print("-----")
 // ----------- Write code to sort the array here -----------
 print("Now sorting the array...")
 
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
+for _ in 1...7 {
+    for i in 0...5 {
+        
+        //is value at i less than value at i+1
+        if numbers[i] < numbers[i+1] {
+            let temporaryValue = numbers[i]
+            numbers[i] = numbers[i+1]
+            numbers[i+1] = temporaryValue
+        }
+        
     }
-    
 }
 
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
-for i in 0...5 {
-    
-    //is value at i less than value at i+1
-    if numbers[i] < numbers[i+1] {
-        let temporaryValue = numbers[i]
-        numbers[i] = numbers[i+1]
-        numbers[i+1] = temporaryValue
-    }
-    
-}
+
 
 
 
