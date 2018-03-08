@@ -24,37 +24,112 @@ print("Press any key to generate the unsorted list.", terminator: "")
 let input = readLine()
 
 // Make an empty array / list
-var cards : [Int] = []
+var numbers : [Int] = []
+
+
 
 // Populate the array
-cards.append(3)
-cards.append(6)
-cards.append(4)
-cards.append(5)
-cards.append(8)
-cards.append(2)
-cards.append(1)
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+numbers.append(4)
+numbers.append(5)
+numbers.append(6)
+numbers.append(7)
 
 // Show the user the contents of the array
 print("-----")
 print("The contents of the unsorted list:")
-for i in 0...cards.count - 1 {
-    print("Index \(i), value: \(cards[i])")
+for i in 0...numbers.count - 1 {
+    print("Index \(i), value: \(numbers[i])")
 }
 print("-----")
 
 // ----------- Write code to sort the array here -----------
 print("Now sorting the array...")
 
-while cards.count > 0 {
-    cards.remove(at: cards.count - 1) //remove number at end of erray
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
 }
+
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+for i in 0...5 {
+    
+    //is value at i less than value at i+1
+    if numbers[i] < numbers[i+1] {
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i+1]
+        numbers[i+1] = temporaryValue
+    }
+    
+}
+
+
+
+
+
 
 // ----------- Final part of the program, show the sorted list -----------
 print("-----")
 print("The contents of the sorted list:")
-for i in 0...cards.count - 1 {
-    print("Index \(i), value: \(cards[i])")
+for i in 0...numbers.count - 1 {
+    print("Index \(i), value: \(numbers[i])")
 }
 print("-----")
 
